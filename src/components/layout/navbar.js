@@ -1,10 +1,6 @@
 import React from "react";
-import Slider from "./slider";
-import Detail from "./details";
-import Covid from "./covid";
-import Footer from "./footer";
 
-function home() {
+function navbar() {
   return (
     <div>
       <div className="info-header">
@@ -98,13 +94,8 @@ function home() {
           </form>
         </nav>
       </div>
-
-      <Slider />
-      <Detail />
-      <Covid />
-      <Footer />
     </div>
   );
 }
 
-export default home;
+export default navbar;
