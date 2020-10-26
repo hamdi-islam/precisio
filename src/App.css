@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+/* navigation bar */
+#navbarSupportedContent {
+  min-height: 80px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .nav-link {
+    color: black;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
   }
 }
+/* end navigation bar style */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.logo {
+  display: inline-block;
+  height: 30px;
+  margin-top: -5px;
+}
+
+/* carousel style */
+
+#carouselExampleIndicators {
+  background-color: rgb(226, 40, 79);
+  max-height: 500px !important;
+}
+.carousel-inner .carousel-item > img {
+  max-height: 500px;
+  max-width: 600px;
+}
+
+.carousel-caption {
+  right: 15%;
+  text-align: left;
+  max-width: 500px;
+  left: 50%;
+  padding: 5px;
+  bottom: 30%;
+}
+/* end carousel style */
+
+.circle {
+  border-radius: 50% !important;
+  height: 200px;
+  width: 50%;
+  margin: 0 auto;
+  border-style: dashed;
+  color: gray;
+  background-color: transparent;
+}
+.row.details {
+  background-color: rgb(80, 192, 187);
+  margin: auto;
+}
+.row.covid {
+  background-color: #faf7fa;
+  margin: auto;
+}
+.row.footer {
+  background-color: #353535;
+  margin: auto;
+}
+
+/* social media icons style */
+
+.fa {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+/* end social media style  */
+
+/* mobile responsive */
+
+@media only screen and (max-width: 576px) {
+  .carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .carousel-caption > h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .carousel-caption > p {
+    font-size: 1rem;
+    text-align: center;
   }
 }
+
+/* end mobile responsive */
