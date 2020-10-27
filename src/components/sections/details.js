@@ -5,7 +5,7 @@ export default function details() {
     <div className="row details">
       <div className="col-md-8">
         <div className="ml-5 mt-5">
-          <h1 className="text-white" style={{ fontSize: 64 }}>
+          <h1 className="text-white" style={{ fontSize: 42 }}>
             Fiabilité et reproductibilité
           </h1>
           <h3 className="text-white">
