@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FormattedMessage } from "react-intl";
 
 function Slider() {
   const [imageIndex, setImageIndex] = useState(1);
@@ -75,10 +76,11 @@ function Slider() {
             //onDrag={(e) => handleMouseDown(e)}
           />
           <div class="carousel-caption">
-            <h1>Test Sérologique Rapide</h1>
+            <h1>
+              <FormattedMessage id="slider1.caption"></FormattedMessage>
+            </h1>
             <p>
-              Précisio est une large gamme de tests diagnostiques rapides à
-              l’usage des professionnels de santé et des patients.
+              <FormattedMessage id="slider1.description" />
             </p>
           </div>
         </div>

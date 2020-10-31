@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LocaleContext } from "../../context/LocalContext";
+import { FormattedMessage } from "react-intl";
 
-function navbar() {
+function Navbar() {
+  const context = useContext(LocaleContext);
   return (
     <div>
       <div className="info-header">
@@ -9,7 +12,7 @@ function navbar() {
           style={{ backgroundColor: "black", opacity: "80%" }}
         >
           <span className="navbar-text mr-3" style={{ color: "white" }}>
-            Qui sommes-nous ?
+            <FormattedMessage id="nav.who" />
           </span>
           <span className="navbar-text mr-3" style={{ color: "white" }}>
             Contact
@@ -51,7 +54,7 @@ function navbar() {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Test antigénique
+                  <FormattedMessage id="nav.antigenic" />
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#">
@@ -67,13 +70,13 @@ function navbar() {
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/">
-                  Test sérologique rapide
+                  <FormattedMessage id="nav.serologic" />
                 </a>
               </li>
 
               <li class="nav-item">
                 <a class="nav-link" href="/">
-                  Test Combo rapide
+                  <FormattedMessage id="nav.combo" />
                 </a>
               </li>
             </ul>
@@ -81,14 +84,18 @@ function navbar() {
           <form>
             <span className="mr-2">
               <img
+                alt="en"
                 src="images/en.png"
-                style={{ height: "20px", width: "30px" }}
+                style={{ height: "20px", width: "30px", cursor: "pointer" }}
+                onClick={() => context.selectLang("en-US")}
               />
             </span>
             <span className="mr-2">
               <img
+                alt="fr"
                 src="images/ar.png"
-                style={{ height: "20px", width: "30px" }}
+                style={{ height: "20px", width: "30px", cursor: "pointer" }}
+                onClick={() => context.selectLang("fr-FR")}
               />
             </span>
           </form>
@@ -98,4 +105,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;

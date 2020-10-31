@@ -1,0 +1,20 @@
+{
+    "nav.who": "Who are we ?",
+    "nav.antigenic": "Antigenic test",
+    "nav.serologic": "Serological test",
+    "nav.combo": "Quick Combo test",
+    "slider1.caption": "Fast Serological Test",
+    "slider1.description": "Précisio is a wide range of rapid diagnostic tests for use by healthcare professionals and patients.",
+    "details.header": "Reliability and reproducibility",
+    "details.subHeader": "Lot validation certificate available on request.",
+    "details.question": "Who uses these tests !!!",
+    "details.answer1": "Validated batch by batch by the National COVID Reference Center.",
+    "details.answer2": "Used by the National COVID Reference Center for its routine analyzes.",
+    "covid.header": "SARS-CoV-2 result rendering platform",
+    "covid.subHeader": "Anonymous epidemiological screening platform for Covid-19 in Algeria.",
+    "covid.details": "SALEM laboratories provide you with a digital tool to anonymously record the Covid-19 tests of your patients in order to follow the spread of the SARS-CoV-2 virus in our country. You can consult the results of your patients and all the data recorded by your colleagues.",
+    "covid.note": "Précisio is a trademark of SALEM Laboratories, a Diagnostics subsidiary.",
+    "covid.header2": "Keep your tests recorded and see the results of other doctors",
+    "covid.details2": "submitting tests helps you as a doctor manage your test history and also helps the health community see where the virus is spreading."
+
+}

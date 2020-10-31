@@ -1,27 +1,22 @@
 import React from "react";
-
+import { FormattedMessage } from "react-intl";
 function covid() {
   return (
     <div className="row covid">
       <div className="col-md-10">
         <h1 className="ml-5" style={{ color: "#7E327E", fontSize: 64 }}>
-          Application de rendu de résultat SARS-CoV-2
+          <FormattedMessage id="covid.header" />
         </h1>
       </div>
       <div className="col-md-8">
         <h2 className="ml-5" style={{ color: "#AD7DAD" }}>
-          Plateforme de dépistage épidémiologique anonyme de la Covid-19 en
-          Algérie.
+          <FormattedMessage id="covid.subHeader" />
         </h2>
         <p className="ml-5">
-          Les laboratoires SALEM mettent à votre disposition un outil digital
-          pour enregistrer de façon anonyme les tests Covid-19 de vos patients
-          an de suivre la propagation du virus SARS-CoV-2 dans notre pays. Vous
-          pouvez consulter les résultats de vos patients et toutes les données
-          enregistrés par vos confrères.
+          <FormattedMessage id="covid.details" />
         </p>
         <p className="ml-5 font-italic" style={{ color: "#AD7DAD" }}>
-          Précisio est une marque des Laboratoires SALEM, filiale Diagnostics.
+          <FormattedMessage id="covid.note" />
         </p>
       </div>
       <div className="col-md-4">
@@ -32,13 +27,10 @@ function covid() {
       </div>
       <div className="col-md-8 my-auto">
         <h2 className="mt-5 mr-5" style={{ color: "#AD7DAD" }}>
-          Gardez vos tests enregistrés et consultez les résultats des autres
-          médecins
+          <FormattedMessage id="covid.header2" />
         </h2>
         <p className="mr-5">
-          l'ajout de tests vous aide en tant que médecin à gérer votre
-          historique de tests et aide la communauté de la santé à voir où le
-          virus se propage.
+          <FormattedMessage id="covid.details2" />
         </p>
       </div>
     </div>

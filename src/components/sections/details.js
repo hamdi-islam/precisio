@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 
 export default function details() {
   return (
@@ -6,21 +7,22 @@ export default function details() {
       <div className="col-md-8">
         <div className="ml-5 mt-5">
           <h1 className="text-white" style={{ fontSize: 42 }}>
-            Fiabilité et reproductibilité
+            <FormattedMessage id="details.header" />
           </h1>
           <h3 className="text-white">
-            Certicat de validation du lot disponible sur simple demande.
+            <FormattedMessage id="details.subHeader" />
           </h3>
         </div>
         <div className="ml-5 mt-5 font-weight-bold">
-          <h5 className="text-white">Qui utilise ces tests !!!</h5>
+          <h5 className="text-white">
+            <FormattedMessage id="details.question" />
+          </h5>
           <ol>
             <li className="text-white mt-5 font-weight-bold">
-              Validé lot par lot par le Centre National de Référence COVID.
+              <FormattedMessage id="details.answer1" />
             </li>
             <li className="text-white font-weight-bold">
-              Utilisé par le Centre National de Référence COVID pour ses
-              analyses de routine.
+              <FormattedMessage id="details.answer2" />
             </li>
           </ol>
         </div>
